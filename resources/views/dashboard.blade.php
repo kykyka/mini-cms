@@ -25,6 +25,7 @@
             <div class="p-6 text-gray-900 dark:text-gray-100">
                 {{ __($post->category->name) }}
             </div>
+            <a href={{ route('cabinet.post.get', $post->id) }}>{{ __('Edit post') }}</a>
         </div>
             {{-- @dump($post)         --}}
         @endforeach
